@@ -1,0 +1,231 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    height: 150px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+.topnav #myLinks {
+    position: fixed;
+    width: 35%;
+    height: 90%;
+    margin: 150px 0px 0px 0px;
+    background-color: white;
+    display: none;
+
+}
+
+.topnav a.text {
+    color: black;
+    margin-top: 30px;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}
+
+.topnav a {
+    padding: 13px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    margin: 57px;
+    background: white;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.active {
+    text-align: center;
+    margin: 40px;
+    background-color: white;
+    color: black;
+}
+
+a.icon:hover {
+    margin: 57px;
+    background-color: white;
+}
+
+a:hover {
+    background-color: darkgray;
+    color: black;
+}
+
+
+/*
+h2 {
+    text-align: left;
+    color: black;
+    margin: 80px 175px 60px 175px;
+    letter-spacing: 4px;
+    font-size: 28px;
+}
+
+h1 {
+    text-align: right;
+    font-size: 17px;
+    color: red;
+    letter-spacing: 1px;
+}
+*/
+
+p {
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 4px;
+}
+
+h1 {
+    text-align: right;
+    font-size: 17px;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 17px;
+    color: gray;
+    text-align: right;
+    letter-spacing: 3px;
+    
+}
+
+h4 {
+    font-size: 58px;
+    color: black;
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.events {
+    height: 100vh;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0px 90px 0px 90px;
+
+
+    grid-template-areas:
+
+        "e-1 e-1 e-1 e-1 e-1 e-1 e-1 e-1 e-1 e-1"
+        "i-1 i-1 i-1 i-1 . . i-2 i-2 i-2 i-2"
+        "d-1 d-1 d-1 d-1 . . d-2 d-2 d-2 d-2"
+        
+        "i-3 i-3 i-3 i-3 . . i-4 i-4 i-4 i-4"
+        "d-3 d-3 d-3 d-3 . . d-4 d-4 d-4 d-4"
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+    ;
+
+
+}
+
+.blocks1 {
+    background-color: white;
+}
+
+.blocks1 a {
+    text-decoration: none;
+    color: red;
+}
+
+.blocks1-event{
+    grid-area:e-1;
+}
+
+.blocks1-img1{
+    grid-area: i-1;
+}
+
+.blocks1-date1{
+    grid-area: d-1;
+}
+
+.blocks1-img2{
+    grid-area: i-2;
+}
+
+.blocks1-date2{
+    grid-area: d-2;
+}
+
+
+.blocks1-img3{
+    grid-area: i-3;
+}
+
+.blocks1-date3{
+    grid-area: d-3;
+}
+
+.blocks1-img4{
+    grid-area: i-4;
+}
+
+.blocks1-date4{
+    grid-area: d-4;
+}
+
+.blocks1-img5{
+    grid-area: i-5;
+}
+
+.blocks1-date5{
+    grid-area: d-5;
+}
+
+.blocks1-img6{
+    grid-area: i-6;
+}
+
+.blocks1-date6{
+    grid-area: d-6;
+}
+
+.blocks1-img7{
+    grid-area: i-7;
+}
+
+.blocks1-date7{
+    grid-area: d-7;
+}
+*/
+
+/*
+.blocks1-img8{
+    grid-area: i-8;
+}
+*/
+
+/*
+.blocks1-date8{
+    grid-area: d-8;
+}
+*/
+
+
+/*
+.blocks1-copyright {
+    padding: 0px 0px 40px 0px;
+    grid-area: co-1;
+}
+*/

@@ -1,0 +1,211 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    height: 150px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+.topnav #myLinks {
+    position: fixed;
+    width: 35%;
+    height: 90%;
+    margin: 150px 0px 0px 0px;
+    background-color: white;
+    display: none;
+
+}
+
+.topnav a.text {
+    color: black;
+    margin-top: 30px;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}
+
+.topnav a {
+    padding: 13px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    margin: 57px;
+    background: white;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.active {
+    text-align: center;
+    margin: 40px;
+    background-color: white;
+    color: black;
+}
+
+a.icon:hover {
+    margin: 57px;
+    background-color: white;
+}
+
+a:hover {
+    background-color: darkgray;
+    color: black;
+}
+
+
+/*
+h2 {
+    text-align: left;
+    color: black;
+    margin: 80px 175px 60px 175px;
+    letter-spacing: 4px;
+    font-size: 28px;
+}
+
+h1 {
+    text-align: right;
+    font-size: 17px;
+    color: red;
+    letter-spacing: 1px;
+}
+*/
+
+p {
+    font-size: 33px;
+    line-height: 150%;
+    letter-spacing: 4px;
+}
+
+h1 {
+    text-align: right;
+    font-size: 17px;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+
+
+h2 {
+    text-align: left;
+    font-size: 18px;
+    color: gray;
+    letter-spacing: 2px;
+}
+
+/*
+h3{
+    font-size: 17px;
+    color:gray;
+    text-align: left;
+    letter-spacing: 3px;
+    padding: 0px 0px 34px 0px;
+    border-bottom: solid grey;
+    border-width: 1px;
+}
+*/
+
+h4{
+    font-size: 25px;
+    color:black;
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+h5 {
+    font-family:serif;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 4px;
+    line-height: 180%;
+    padding: 0px 0px 40px 0px;
+    border-bottom: solid grey;
+    border-width: 1px;
+    
+}
+
+.events {
+    height: 100vh;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1ft;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    margin: 0px 90px 0px 90px;
+    
+    
+    grid-template-areas:
+        " e-1 e-1 . . . . . . . ."
+        " e-2 e-2 e-2 e-2 e-2 . . . . ."
+        " i4-1 i4-1 i4-1 i4-1 i4-1 i4-1 i4-1 i4-1 i4-1 i4-1"
+        "i4-1 i4-1 i4-1 i4-1 i4-1 i4-1 i4-1 i4-1 i4-1 i4-1"
+        "e2-2 e2-2 e2-2 e2-2 e2-2 e2-2 . . . ."
+        
+        "e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4"
+        "e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4"
+        "e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4"
+        "e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4"
+        "e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4 e2-4"
+        
+        
+        ". . . . i4-5 i4-5 i4-5 i4-5 i4-5 i4-5"
+        ". . . . . . . . . ."
+    ;
+
+
+}
+
+.blocks1 {
+    background-color: white;
+}
+
+.blocks1-event{
+    grid-area: e-1;
+}
+
+.blocks1-event1{
+    grid-area: e-2;
+}
+
+
+.blocks1-img1{
+     grid-area: i-4;
+}
+
+
+
+.blocks1-img2{
+    padding: 0px 0px 0px 0px;
+    grid-area: i4-1;
+}
+
+.blocks1-event3{
+    grid-area: e2-2;
+}
+
+
+.blocks1-event4{
+    grid-area: e2-4;
+}
+
+.blocks1-img4{
+    padding: 30px 0px 0px 0px;
+    grid-area: i4-4;
+}
+
+.blocks1-copyright{
+    padding: 0px 0px 40px 0px;
+    grid-area: i4-5;
+}
+
