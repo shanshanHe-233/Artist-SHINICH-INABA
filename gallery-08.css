@@ -76,6 +76,7 @@ a:hover {
 }
 
 
+
 p {
     font-size: 30px;
     line-height: 130%;
@@ -84,9 +85,19 @@ p {
 
 h1 {
     text-align: right;
-    font-size: 7px;
+    font-size: 8px;
     color: gray;
     letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 12px;
+    margin-top: 20px;
+    color: black;
+    text-align: left;
+    letter-spacing: 3px;
+    font-family: "Source Serif Pro";
+
 }
 
 h3 {
@@ -94,17 +105,36 @@ h3 {
     color: gray;
     text-align: left;
     letter-spacing: 3px;
+    margin: 25px 0px 0px 0px;
     font-family:"Karla";
-    margin: 0px 0px 8px 0px;
-
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 8px;
+    color: grey;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-size: 9px;
     color: black;
     text-align: left;
-    letter-spacing: 5px;
+    letter-spacing: 1.5px;
+    margin: 10px 0px 0px 0px;
     font-family: "Source Serif Pro";
+}
+
+.img1{
+    width:110%;
+}
+
+.img2{
+    width: 145%;
+}
+
+.img3{
+    width: 145%;
 }
 
 .events {
@@ -113,29 +143,30 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 7px;
-    padding: 0px 45px 0px 45px;
-
+    grid-gap: 10px;
+    margin: 0px 40px 0px 40px;
 
 
     grid-template-areas:
 
-        "e-1 e-1 e-1 e-1 e-1  e-1 e-1 e-1 e-1 e-1 e-1"
+        "e-1 e-1 e-1 e-1 e-1 e-1 e-1 e-1 e-1 e-1"
 
-        "i-1 i-1 i-1 i-1 i-1 .  i-2 i-2 i-2 i-2 i-2"
-        "d-1 d-1 d-1 d-1 d-1 .  d-2 d-2 d-2 d-2 d-2"
+        "i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1"
+        "i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1"
+        "i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1"
+        "i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1 i-1"
 
-        "i-3 i-3 i-3 i-3 i-3 .  i-4 i-4 i-4 i-4 i-4"
-        "d-3 d-3 d-3 d-3 d-3 .  d-4 d-4 d-4 d-4 d-4"
 
-        "i-5 i-5 i-5 i-5 i-5 . i-6 i-6 i-6 i-6 i-6"
-        "d-5 d-5 d-5 d-5 d-5 .  d-6 d-6 d-6 d-6 d-6"
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        "i-2 i-2 i-2 i-2 . . i-3 i-3 i-3 i-3"
+        "i-2 i-2 i-2 i-2 . . i-3 i-3 i-3 i-3"
+        "i-2 i-2 i-2 i-2 . . i-3 i-3 i-3 i-3"
+        ". . . . . . . . . ."
+        "if-1 if-1 if-1 if-1 if-1 if-1 . . . . "
+        "if-1 if-1 if-1 if-1 if-1 if-1 . . . ."
 
-        "i-7 i-7 i-7 i-7 i-7 . i-8  i-8 i-8 i-8 i-8"
-        "d-7 d-7 d-7 d-7 d-7 .  d-8 d-8 d-8 d-8 d-8"
-
-        ". . . . . . . . . . ."
-        ". . .  co-1 co-1 co-1 co-1 co-1 co-1 co-1 co-1"
+        "co-1 co-1 co-1 co-1 co-1 co-1 co-1 co-1 co-1 co-1"
 
     ;
 
@@ -159,16 +190,9 @@ h4 {
     grid-area: i-1;
 }
 
-.blocks1-date1 {
-    grid-area: d-1;
-}
 
 .blocks1-img2 {
     grid-area: i-2;
-}
-
-.blocks1-date2 {
-    grid-area: d-2;
 }
 
 
@@ -176,63 +200,23 @@ h4 {
     grid-area: i-3;
 }
 
-.blocks1-date3 {
-    grid-area: d-3;
-}
-
-.blocks1-img4 {
-    grid-area: i-4;
-}
-
-.blocks1-date4 {
-    grid-area: d-4;
-}
-
-.blocks1-img5 {
-    grid-area: i-5;
-}
-
-.blocks1-date5 {
-    grid-area: d-5;
-}
-
-.blocks1-img6 {
-    grid-area: i-6;
-}
-
-.blocks1-date6 {
-    grid-area: d-6;
-}
-
-.blocks1-img7 {
-    grid-area: i-7;
-}
-
-.blocks1-date7 {
-    grid-area: d-7;
-}
-
-
-.blocks1-img8 {
-    grid-area: i-8;
-}
-
-
-
-.blocks1-date8 {
-    grid-area: d-8;
+.blocks1-info1 {
+    grid-area: if-1;
+    padding: 0px 0px 10px 0px;
 }
 
 
 .blocks1-copyright {
-    padding: 0px 0px 40px 0px;
+    border-top: solid grey;
+    border-width: 0.5px;
+    text-align: right;
+    padding: 40px 0px 0px 0px;
     grid-area: co-1;
 }
 
-
 @media only screen and (min-width:768px) {
-    
-       .topnav #myLinks {
+
+    .topnav #myLinks {
         width: 15%;
         height: 494px;
         padding: 40px 37px 0px 37px;
@@ -242,30 +226,32 @@ h4 {
 
     }
     
-
-    h3 {
-        font-size: 9px;
-        letter-spacing: 3px;
-
-    }
-
-    h1 {
-        font-size: 8px;
-    }
+      
     
-    .blocks1-date1 {
-    padding: 0px 0px 25px 0px;
-}
-    .blocks1-date3 {
-    padding: 0px 0px 25px 0px;
-}
+    .img1{
+        padding: 0px 0px 0px 170px;
+        width: 60%;
+        
+    } 
     
-    .blocks1-date5 {
-    padding: 0px 0px 25px 0px;
-}   
+     .img2{
+         padding: 0px 0px 0px 90px;
+        width: 100%;
+    } 
     
-    .blocks1-date7 {
-    padding: 0px 0px 25px 0px;
-}   
+     .img3{
+         padding: 0px 0px 0px 0px;
+        width: 100%;
+    } 
+    
+    .blocks1-copyright {
+    border: none;
 
 }
+
+    
+
+}
+    
+
+

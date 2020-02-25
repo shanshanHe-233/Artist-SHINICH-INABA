@@ -1,46 +1,54 @@
 body {
-    width: 100%;
+
     margin: 0;
     padding: 0;
 }
 
+.mySlides {display:none;}
+
+
 .topnav {
-    height: 150px;
+    width: 100%;
+    height: 90px;
     overflow: hidden;
     background-color: white;
-    position: relative;
+    position: fixed;
+
 }
 
 .topnav #myLinks {
     position: fixed;
     width: 35%;
-    height: 90%;
-    margin: -10px 0px 0px 0px;
+    height: 550px;
+    margin: -1.5px 0px 0px 0px;
     background-color: white;
     display: none;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    
 }
+   
 
 .topnav a.text {
     color: black;
     margin-top: 30px;
-    padding: 30px;
+    padding: 30px 0px -10px 0px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 10px;
+    font-family: "Mukta";
     display: block;
     text-align: center;
+    
 }
 
 
 .topnav a {
-    padding: 13px;
+    padding: 7px;
     text-decoration: none;
-    font-size: 17px;
     display: block;
 }
 
 .topnav a.icon {
-    margin: 57px;
+    margin: 30px 0px 0px 10px;
     background: white;
     display: block;
     position: absolute;
@@ -50,85 +58,92 @@ body {
 
 .active {
     text-align: center;
-    margin: 40px;
+    margin: 25px;
     background-color: white;
     color: black;
+}
+
+.active-1 {
+    width: 40%;
 }
 
 a.icon:hover {
-    margin: 57px;
+    padding: 35px 0px 30px 10px;
+    margin: 5px;
     background-color: white;
+    
 }
 
 a:hover {
-    background-color: darkgrey;
+    background-color: white;
     color: black;
 }
 
 
-.navigation-bar{
+.navigation-bar {
     height: 150px;
-    background: pink;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    grid-gap: 5px; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
     padding: 20px;
-    
-     grid-template-areas: 
-                ". . . . . . . "
-                "my-1-1 . my-1 my-1 my-1 . . "
-                ". . my-1 my-1 my-1 . . "
-                ". . . . . . . "
-                ;
-            
+
+    grid-template-areas:
+        ". . . . . . . "
+        "my-1-1 . my-1 my-1 my-1 . . "
+        ". . my-1 my-1 my-1 . . "
+        ". . . . . . . "
+    ;
+
     align-items: center;
-          
+
 
 }
 
 
 
-.blocks1{
-        background-color: white;
-}
-    
-.blocks1-navigation {  
-        grid-area: my-1;
-            
-        }
-    
-.blocks1-logo{
-        grid-area: my-1-1;
+.blocks1 {
+    background-color: white;
 }
 
+.blocks1-navigation {
+    grid-area: my-1;
+
+}
+
+.blocks1-logo {
+    grid-area: my-1-1;
+}
 
 
-.homepage-image-1 {
+
+.mySlides {
+    width: 100%;
     object-fit: contain;
-    height: 100%;
-    background: white;
 }
+
 
 h2 {
     text-align: left;
     color: black;
-    margin: 80px 175px 60px 175px;
-    letter-spacing: 4px;
-    font-size: 28px;
+    margin: 26px 0px 25px 70px;
+    letter-spacing: 3.5px;
+    font-size: 12px;
+    font-family: "Source Serif Pro";
 }
 
 h1 {
     text-align: right;
-    font-size: 17px;
+    font-size: 6px;
     color: gray;
     letter-spacing: 1px;
 }
 
 p {
-    font-size: 25px;
-    margin: 0px 175px;
+    font-size: 10.5px;
+    padding: 0px 70px 30px 70px;
     line-height: 220%;
+    font-family:"Karla";
 }
 
 .biography {
@@ -136,15 +151,26 @@ p {
     background: white;
 }
 
+.facebook {
+    width: 22%;
+    float: right;
+}
+
+.twitter {
+    width: 50%;
+    float: right;
+}
+
+
 .footer {
-    height: 200px;
+    height: 35px;
     background: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-    padding: 0px;
-    margin: 0px 120px 0px 120px;
+    padding: 25px 0px 40px 0px;
+    margin: 0px 60px 0px 50px;
     border-top: solid grey;
     border-width: 1px;
 
@@ -155,7 +181,6 @@ p {
         ". . . . . . . . . "
     ;
 
-    align-items: right;
 
 
 }
@@ -179,6 +204,75 @@ p {
     grid-area: my-3;
 }
 
-@media screen and (min-width:300px) and (max-width:600px){
+@media only screen and (min-width:768px) {
+
+    .topnav #myLinks {
+        width: 15%;
+        height: 400px;
+        padding: 40px 37px 0px 37px;
+        margin: -1.5px 0px 0px 0px;
+        background-color: white;
+        display: none;
+
+    }
+
+    .mySlides {
+        width: 40%;
+        padding: 30px 250px 50px 250px;
+        float: center;
+
+    }
+
+    .active-1 {
+        width: 20%;
+        padding: 2px 0px 0px 20px;
+        float: left;
+    }
+    
+    p {
+    font-size: 11px;
+    padding: 0px 70px 30px 70px;
+    line-height: 220%;
+    font-family:'Karla';
+}
+
+    .biography {
+        height: 30vh;
+        background: white;
+    }
+
+    .facebook {
+        width: 12%;
+        float: right;
+    }
+
+    .twitter {
+        width: 24%;
+        float: left;
+        padding: 1.5px 0px 0px 10px;
+    }
+
+    .footer {
+        margin: 100px 60px 0px 50px;
+        padding: 0px 0px 40px 0px;
+        border: none;
+    }
+    
+    h1 {
+    text-align: right;
+    font-size: 8px;
+    color: gray;
+    letter-spacing: 1px;
+}
+}
+
+@media only screen and (min-width:414px) {
+    h1 {
+    text-align: right;
+    font-size: 7px;
+    color: gray;
+    letter-spacing: 1px;
+}
+    
     
 }
