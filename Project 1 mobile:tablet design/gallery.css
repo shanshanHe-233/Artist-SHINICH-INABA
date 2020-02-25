@@ -9,9 +9,9 @@ body {
     height: 90px;
     overflow: hidden;
     background-color: white;
-    position: relative;
-}
+    position: fixed;
 
+}
 
 .topnav #myLinks {
     position: fixed;
@@ -20,6 +20,8 @@ body {
     margin: 90px 0px 0px 0px;
     background-color: white;
     display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+
 
 }
 
@@ -32,6 +34,7 @@ body {
     font-size: 9px;
     display: block;
     text-align: center;
+    font-family: "Mukta";
 }
 
 
@@ -91,6 +94,8 @@ h3 {
     color: gray;
     text-align: left;
     letter-spacing: 3px;
+    font-family:"Karla";
+    margin: 0px 0px 8px 0px;
 
 }
 
@@ -99,6 +104,7 @@ h4 {
     color: black;
     text-align: left;
     letter-spacing: 5px;
+    font-family: "Source Serif Pro";
 }
 
 .events {
@@ -225,6 +231,17 @@ h4 {
 
 
 @media only screen and (min-width:768px) {
+    
+       .topnav #myLinks {
+        width: 15%;
+        height: 494px;
+        padding: 40px 37px 0px 37px;
+        margin: -1.5px 0px 0px 0px;
+        background-color: white;
+        display: none;
+
+    }
+    
 
     h3 {
         font-size: 9px;
@@ -236,5 +253,19 @@ h4 {
         font-size: 8px;
     }
     
+    .blocks1-date1 {
+    padding: 0px 0px 25px 0px;
+}
+    .blocks1-date3 {
+    padding: 0px 0px 25px 0px;
+}
+    
+    .blocks1-date5 {
+    padding: 0px 0px 25px 0px;
+}   
+    
+    .blocks1-date7 {
+    padding: 0px 0px 25px 0px;
+}   
 
 }
